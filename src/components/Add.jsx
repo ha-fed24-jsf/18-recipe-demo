@@ -12,7 +12,7 @@ const Add = () => {
 			<div className="error-message">Titel är obligatoriskt.</div>
 
 			<label htmlFor="description">Beskrivning</label>
-			<textarea id="description" name="description" rows="5" required value={'Text area'} />
+			{/* <textarea id="description" name="description" rows="5" required value={'Text area'} /> */}
 			<div className="error-message">Beskrivning är obligatorisk.</div>
 
 			<button type="submit">Spara recept</button>
