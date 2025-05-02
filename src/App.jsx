@@ -1,12 +1,17 @@
-import { useState } from 'react'
 import './App.css'
+import { NavLink, Outlet } from 'react-router'
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<div className="app">
-			app
+			<header>
+				<nav>
+					<NavLink to="/"> Start </NavLink>
+					<NavLink to="/recepies">Alla recept</NavLink>
+					<NavLink to="/add">Lägg till recept</NavLink>
+				</nav>
+			</header>
+			<Outlet />
 		</div>
 	)
 }
