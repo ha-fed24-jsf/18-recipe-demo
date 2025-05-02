@@ -135,13 +135,12 @@ textarea:invalid:focus {
 .error-message {
 	color: var(--border-error);
 	font-size: 0.9rem;
-	display: none;
+	/* display: none; */
 }
-
-input:invalid + .error-message,
-textarea:invalid + .error-message {
+/*
+:invalid + .error-message {
 	display: block;
-}
+} */
 
 button {
 	margin-top: 1.5rem;
@@ -152,6 +151,9 @@ button {
 	border-radius: var(--input-radius);
 	font-size: var(--font-size);
 	cursor: pointer;
+}
+button:disabled {
+	background-color: #555;
 }
 
 button:hover {
